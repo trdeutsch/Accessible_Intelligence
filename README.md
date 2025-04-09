@@ -1,1 +1,2 @@
 # Accessible_Intelligence
+We aim to explore how to prompt AI to create engaging fundraising campaigns for charities effectively. We are developing a process that can generate compelling campaign descriptions tailored to any charity and its specific needs. With this process, we aim to produce descriptions ranging from 250 to 500 words. Charities can then distribute these descriptions to their supporters to enhance engagement and improve fundraising efforts.
