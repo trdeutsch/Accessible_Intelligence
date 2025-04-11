@@ -14,11 +14,11 @@ result=query_job.result()
 
 result=result.to_dataframe()
 
-def responses(name, answer):
+def responses(fundraiser, response):
     my_dict={}
-    answer=answer.loc[answer['What_is_your_name_']==name,:]
-    for column in answer:
-        for value in answer[column]:
+    response=response.loc[response['What_is_your_name_']==fundraiser,:]
+    for column in response:
+        for value in response[column]:
             my_dict[column]=value
     return my_dict
-responses('Sarah Williams', result)
+responses(input("Enter the fundraiser's name"), result)
