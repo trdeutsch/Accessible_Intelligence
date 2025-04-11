@@ -7,11 +7,11 @@ credentials=service_account.Credentials.from_service_account_file('/Users/trandu
 project='accessible-intelligence-456411'
 
 client=bigquery.Client(credentials=credentials, project=project)
+
 query='select * from accessible-intelligence-456411.fundraising_form.responses'
 query_job=client.query(query)
-result=query_job.result()
 
-result=result.to_dataframe()
+result=query_job.result().to_dataframe()
 
 def responses(fundraiser, response):
     my_dict={}
