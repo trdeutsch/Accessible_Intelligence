@@ -3,8 +3,7 @@ from google.oauth2 import service_account
 
 credentials=service_account.Credentials.from_service_account_file('/Users/tranduc/Downloads/credentials.json', 
                                                                   scopes=['https://www.googleapis.com/auth/cloud-platform',
-                                                                          "https://www.googleapis.com/auth/drive",
-                                                                          "https://www.googleapis.com/auth/bigquery",])
+                                                                          "https://www.googleapis.com/auth/drive"])
 project='accessible-intelligence-456411'
 
 client=bigquery.Client(credentials=credentials, project=project)
